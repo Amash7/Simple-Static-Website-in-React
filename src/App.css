@@ -1,0 +1,79 @@
+body{
+    background-color: #272e34;
+    background-image: url('./images/half-react.png');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position-x: right;
+    background-position-y: 275px;
+}
+/*NavBar*/
+nav{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 20px 15px;
+    background-color: #21222a;
+}
+nav > img{
+    width: 60px;
+}
+nav > h1{
+    color: #60d8f9;
+    margin-left: 5px;
+}
+nav > h2{
+    color: white;
+    margin-right: auto;
+    margin-left: 1050px;
+}
+/*Body*/
+main > h1{
+    color: white;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+main > ul{
+    color: white;
+    margin-left: 55px;
+    font-size: 22px;
+    line-height: 1.75;
+}
+main > ul ::marker{
+    color: #5fd9fa;
+}
+/*Media Query*/
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column; 
+        height: auto; 
+        padding: 10px; 
+    }
+    
+    nav > img {
+        width: 40px; 
+        margin-bottom: 10px; 
+    }
+    
+    nav > h1 {
+        font-size: 20px; 
+        margin: 0; 
+    }
+    
+    nav > h2 {
+        font-size: 16px; 
+        margin: 0; 
+    }
+  
+    main > h1 {
+      margin-left: 10px;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  
+    main > ul {
+      margin-left: 15px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
